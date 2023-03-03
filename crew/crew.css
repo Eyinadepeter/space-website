@@ -1,0 +1,483 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@import url(https://fonts.googleapis.com/css2?family=Bellefair&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Barlow&display=swap);
+
+:root {
+    --bellefair--fnt: "Bellefair", serif;
+    --barlow-condensed--fnt: "Barlow Condensed", sans-serif;
+    --barlow--fnt: "Barlow", sans-serif
+}
+
+:root {
+    --dark--clr: hsl(230, 35%, 7%);
+    --fog--clr: hsl(231, 77%, 90%);
+    --light--clr: hsl(0, 0%, 100%);
+    --half-transparent--clr: rgba(255, 255, 255, 0.5);
+}
+
+
+body {
+    background: url(../images/crew/background-crew-mobile.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+header {
+    height: 96px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    align-items: center;
+    font-family: var(--barlow-condensed--fnt);
+    font-style: normal;
+}
+
+
+a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 2.700000047683716px;
+    text-align: left;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+
+}
+
+.active {
+    border-bottom: #FFFFFF solid;
+    margin-bottom: -37px;
+
+}
+
+.active1 {
+    border-bottom: #FFFFFF solid;
+
+
+}
+
+.logo {
+    width: 40px;
+    aspect-ratio: 1/1;
+}
+
+.menu-icon {
+    width: 24px;
+    height: 21px;
+}
+
+.nav {
+    display: none;
+}
+
+/* -----------------------------MAIN---------------------- */
+body {
+    background-image: url(../images/crew/background-crew-mobile.jpg);
+}
+
+.ii {
+    height: 223px;
+    width: 327;
+    padding-left: 35%;
+    padding-top: 32px;
+}
+
+.header {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    padding-left: 30vw;
+    padding-top: 25px;
+    color: #FFFFFF;
+
+}
+
+.span {
+    padding-right: 18px;
+    width: 15px;
+    height: 17px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+}
+
+.line {
+    width: 80%;
+    height: 1px;
+    background: #383B4B;
+    margin-left: 8%;
+}
+
+.list {
+    display: flex;
+    gap: 15px;
+    padding-left: 40%;
+    padding-top: 32px;
+}
+
+.anchor {
+    height: 10px;
+    width: 10px;
+    background: rgb(77, 74, 74);
+    border-radius: 50%;
+
+}
+
+.writeup {
+    text-align: center;
+    color: #fff;
+    padding-top: 100px;
+}
+
+p {
+    width: 80%;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #D0D6F9;
+    padding-top: 30px;
+    position: absolute;
+    left: 10%;
+
+}
+
+h3 {
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: -20px;
+}
+
+h4 {
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    position: absolute;
+    top: 55%;
+    left: 35%;
+
+}
+
+#goto {
+    background: #D0D6F9;
+}
+.footer1{
+    margin-left: -6%;
+}
+
+.footer4{
+    margin-left: 10%;
+}
+
+
+
+
+
+
+
+/* ------------------------------MEDIA QUARY------------------- */
+
+@media screen and (min-width:768px) {
+
+    /* ------------------------HEADER----------------------- */
+    body {
+        background-image: url(../images/crew/background-crew-tablet.jpg) no-repeat cover;
+
+    }
+
+    header {
+        padding: 0 0 0 24px;
+
+    }
+
+    .nav {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .num {
+        display: none;
+    }
+
+    .lg-screen-content {
+        display: flex;
+        justify-content: center;
+        width: 500px;
+        height: 96px;
+        gap: 40px;
+
+        background-color: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40.7742px);
+    }
+
+    a {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 2.3625px;
+
+    }
+
+
+
+    /* -----------------------------MAIN------------------------- */
+
+    .header {
+        font-weight: 400;
+        font-size: 20px;
+        padding-left: 5%;
+        padding-top: 70px;
+    }
+
+    .span {
+        font-size: 20px;
+    }
+
+    .line {
+        display: none;
+
+    }
+
+    .writeup {
+        position: absolute;
+        top: 25%;
+        left: 18vw;
+
+
+    }
+
+    h4 {
+        font-weight: 400;
+        font-size: 24px;
+
+    }
+
+    h3 {
+        height: 46px;
+        width: 600px;
+        padding-left: 50px;
+        padding-top: 30px;
+        border-radius: nullpx;
+        font-size: 40px;
+    }
+
+    p {
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        color: #D0D6F9;
+        padding-top: 60px;
+    }
+
+    .list {
+        padding-left: 45%;
+        padding-top: 350px;
+
+    }
+
+    .ii {
+        position: absolute;
+        left: -3%;
+        top: 570px;
+        height: 532px;
+        width: 539.508056640625px;
+    }
+       
+
+}
+
+
+@media screen and (min-width:1440px) {
+    body {
+        background-image: url(../images/crew/background-crew-desktop.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    .num {
+        display: contents;
+        color: #FFFFFF;
+    }
+
+    .logo {
+        margin-top: 60px;
+    }
+
+    .lg-screen-content {
+        display: flex;
+        justify-content: center;
+        width: 830px;
+        height: 96px;
+        gap: 40px;
+
+        background-color: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40.7742px);
+        margin-top: 60px;
+
+    }
+
+    .linee {
+        width: 40%;
+        height: 1px;
+        background: #fff;
+        position: absolute;
+        left: 10%;
+        top: 11%;
+    }
+
+    /* -------------------------------MAIN-------------------- */
+
+    .header {
+        font-family: Barlow Condensed;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 34px;
+        letter-spacing: 4.724999904632568px;
+        text-align: left;
+        padding-left: 150px;
+        padding-top: 150px;
+
+    }
+
+    .span {
+        font-family: Barlow Condensed;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 34px;
+        letter-spacing: 4.724999904632568px;
+        text-align: left;
+
+    }
+
+    .writeup {
+        text-align: left;
+    }
+
+    h4 {
+        height: 37px;
+        width: 214px;
+        position: absolute;
+        left: -28%;
+        top: 250px;
+
+
+    }
+
+    h3 {
+        width: 600px;
+        height: 64px;
+        font-family: 'Bellefair';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 64px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-left: -36%;
+        padding-top: 33%;
+
+    }
+
+    p {
+        width: 360px;
+        height: 128px;
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        color: #D0D6F9;
+        text-align: left;
+        margin-left: -203px;
+        padding-top: 120px;
+
+    }
+
+    .list {
+        padding-left: 150px;
+        padding-top: 500px;
+    }
+
+    .ii {
+        height: 712px;
+        width: 568.071533203125px;
+        position: absolute;
+        top: -85px;
+        left: 480px;
+
+    }
+
+    .iii {
+        position: absolute;
+        height: 572px;
+        width: 456.3721008300781px;
+        left: 20%;
+
+    }
+
+    .footer1 {
+        width: 500px;
+        margin-left: -70px;
+    }
+
+    .footer2 {
+        width: 750px;
+        padding-left: 117px;
+        padding-top: 200px;
+    }
+
+    .footer3 {
+        margin-left: -230px
+    }
+    .footer4{
+        margin-left: -40px;
+    }
+    .footer5{
+        padding-left:0px;
+    }
+    .footer6{
+        margin-left: 25px;
+    }
+
+}

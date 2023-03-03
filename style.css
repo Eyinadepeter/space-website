@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Bellefair&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Barlow&display=swap);
+
+:root {
+    --bellefair--fnt: "Bellefair", serif;
+    --barlow-condensed--fnt: "Barlow Condensed", sans-serif;
+    --barlow--fnt: "Barlow", sans-serif
+}
+
+:root {
+    --dark--clr: hsl(230, 35%, 7%);
+    --fog--clr: hsl(231, 77%, 90%);
+    --light--clr: hsl(0, 0%, 100%);
+    --half-transparent--clr: rgba(255, 255, 255, 0.5);
+}
+
+
+body {
+    background-image: url('./images/home/background-home-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+
+}
+
+header {
+
+    height: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.nav {
+    display: none;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    padding-top: -150px;
+
+}
+
+/* a {
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-top: 50px;
+    color: rgb(233, 45, 45);
+    text-decoration: none;
+    padding-left: 40px;
+    font-display: var(--bellefair--fnt)
+} */
+
+.num {
+    display: none;
+}
+
+.sm-screen {
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-top: 50px;
+    color: rgb(233, 45, 45);
+    text-decoration: none;
+    padding-left: 40px;
+    font-display: var(--bellefair--fnt)
+}
+
+.show {
+    width: 40vw;
+    padding: 1rem 2px;
+}
+
+.close {
+    margin-top: -10%;
+    font-size: 50px;
+}
+
+.logo {
+    width: 48px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: white;
+}
+
+.menu-ico {
+    width: 35px;
+
+}
+
+/* ---------------------- MAIN SECTION ----------------- */
+
+main {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 48px;
+    margin: 48px auto 0;
+    align-items: center;
+    color: aliceblue;
+    gap: 80px;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.sm-screen {
+    display: none;
+}
+
+.writeup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    height: 334PX;
+}
+
+.writeup>h1 {
+    height: 100px;
+    width: 100%;
+    font-size: 80px;
+}
+
+.writeup>h4 {
+    font-size: 16px;
+    width: 100%;
+}
+
+.writeup>h4 {
+    font-size: 15px;
+}
+
+
+
+.main-circle {
+    width: 150px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: white;
+    color: black;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.circle {
+    display: grid;
+    place-items: center;
+    position: relative;
+    width: fit-content;
+}
+
+.main-circle:hover+.opa {
+    position: absolute;
+    width: 150%;
+    aspect-ratio: 1/1;
+    background-color: white;
+    opacity: 0.1;
+
+
+    border-radius: 50%;
+}
+
+/* ----------------MEDIA QUERY ---------------- */
+
+@media screen and (min-width:768px) {
+    body {
+        background-image: url('./images/home/background-home-tablet.jpg');
+    }
+
+    header {
+        padding: 0 45px 0 24px;
+    }
+
+
+    .lg-screen-content {
+        display: flex;
+        justify-content: center;
+        height: 100px;
+        gap: 40px;
+        margin-top: 30px;
+        background-color: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40.7742px);
+    }
+
+    a {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 2.3625px;
+        text-decoration: none;
+        color: #ffff;
+        padding-top: 55px;
+
+
+    }
+
+    .nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .num {
+        display: none;
+    }
+
+
+
+    /* ----------MAIN SECTION----------- */
+    main {
+        margin-top: 102px;
+    }
+
+    .main-circle {
+        width: 242px;
+
+    }
+
+    .active1 {
+        border-bottom: #FFFFFF solid;
+
+    }
+
+}
+
+@media screen and (min-width:1440px) {
+    body {
+        background-image: url('./images/home/background-home-desktop.jpg');
+    }
+
+    .num {
+        display: inline;
+    }
+
+
+
+
+    /* ----------MAIN SECTION----------- */
+    main {
+        margin-top: 0;
+        width: 90%;
+        height: fit-content;
+        flex-direction: row;
+        text-align: justify;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: 300px;
+    }
+
+    .writeup {
+        width: 450px;
+        height: fit-content;
+        place-items: left;
+
+    }
+
+    .writeup>h1 {
+        font-size: 150px;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .writeup>h4 {
+        font-size: 28px;
+    }
+
+    .writeup>p {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .main-circle {
+        width: 274px;
+
+    }
+}
