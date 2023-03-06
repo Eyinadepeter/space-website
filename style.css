@@ -293,4 +293,10 @@ main {
         width: 274px;
 
     }
+
+    .num {
+        display: inline;
+        padding-right: 120px;
+        margin: ;
+    }
 }

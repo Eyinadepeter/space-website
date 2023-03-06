@@ -1,6 +1,6 @@
 const menubar = document.querySelector(".menu-ico")
-const menucontent = document.querySelector(".sm-s")
-// const close = document.getElementById("close")
+const menucontent = document.querySelector(".sm-screen")
+const close = document.getElementById("close")
 
 
 
@@ -9,4 +9,4 @@ menubar.addEventListener("click", () => {
 
 })
 
-// close.addEventListener("click", () => menucontent.classList.remove("show"))
+close.addEventListener("click", () => menucontent.classList.remove("show"))

@@ -76,16 +76,7 @@ a {
 }
 
 .nav {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    background-color: yellowgreen;
-    height: 100vh;
-    top: 0;
-    right: 0;
-    overflow: hidden;
-    width: 0;
-    transition: all 2s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    display: none;
 }
 
 .show {
@@ -450,10 +441,14 @@ h5 {
         margin-top: 60px;
     }
 
+    .nav {
+        padding-left: 45%;
+    }
+
     .lg-screen-content {
         display: flex;
         justify-content: center;
-        width: 830px;
+        width: 930px;
         height: 96px;
         gap: 40px;
         padding: 39px 165px 38px 123px;
