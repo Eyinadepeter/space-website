@@ -85,17 +85,19 @@ a {
     display: flex;
     flex-direction: column;
     position: fixed;
-    background-color: rgb(8, 8, 8);
+    background-color: rgb(5, 5, 5);
+    gap: 50px;
     height: 100vh;
     top: 0;
     right: 0;
     overflow: hidden;
     width: 0;
-    transition: all 2s ease-in;
+    transition: all 0.2s ease;
+    z-index: 1;
 }
 
 .show {
-    width: 40vw;
+    width: 100vw;
     padding: 1rem 2px;
 }
 
@@ -106,13 +108,14 @@ a {
 
 .sm-nav>a {
     display: block;
-    padding-top: 50px;
-    font-size: 20px;
+    padding-top: 120px;
+    font-size: 40px;
     font-weight: 900;
     color: rgb(228, 219, 219);
     text-decoration: none;
     padding-left: 20px;
-    font-display: var(--bellefair--fnt)
+    font-display: var(--bellefair--fnt);
+    text-align: center;
 }
 
 .num {

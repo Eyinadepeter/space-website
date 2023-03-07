@@ -54,13 +54,13 @@ header {
 
 a {
     display: block;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 900;
     padding-top: 80px;
-    color: rgb(233, 45, 45);
+    color: rgb(223, 217, 217);
     text-decoration: none;
-    padding-left: 40px;
-    font-display: var(--bellefair--fnt)
+    font-display: var(--bellefair--fnt);
+    text-align: center;
 }
 
 .num {
@@ -78,22 +78,23 @@ a {
     display: flex;
     flex-direction: column;
     position: fixed;
-    background-color: rgb(75, 75, 63);
+    background-color: rgb(5, 5, 5);
+    gap: 50px;
     height: 100vh;
     top: 0;
     right: 0;
     overflow: hidden;
     width: 0;
-    transition: all 2s ease-in;
+    transition: all 0.2s ease;
+    z-index: 1;
 }
 
 .show {
-    width: 40vw;
-    padding: 1rem 2px;
+    width: 100vw;
 }
 
 .close {
-    margin-top: -10%;
+    margin-top: 10%;
     font-size: 50px;
 }
 
