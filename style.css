@@ -52,30 +52,39 @@ header {
 
 }
 
-/* a {
+a {
     display: block;
     font-size: 20px;
     font-weight: 900;
-    padding-top: 50px;
+    padding-top: 80px;
     color: rgb(233, 45, 45);
     text-decoration: none;
     padding-left: 40px;
     font-display: var(--bellefair--fnt)
-} */
+}
 
 .num {
     display: none;
 }
 
-.sm-screen {
-    display: block;
-    font-size: 20px;
-    font-weight: 900;
-    padding-top: 50px;
-    color: rgb(233, 45, 45);
-    text-decoration: none;
-    padding-left: 40px;
-    font-display: var(--bellefair--fnt)
+.close {
+    width: 30px;
+
+}
+
+
+
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: rgb(75, 75, 63);
+    height: 100vh;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    width: 0;
+    transition: all 2s ease-in;
 }
 
 .show {
@@ -117,9 +126,6 @@ main {
 
 }
 
-.sm-screen {
-    display: none;
-}
 
 .writeup {
     display: flex;
@@ -198,6 +204,10 @@ main {
         backdrop-filter: blur(40.7742px);
     }
 
+    .menu-content {
+        display: none;
+    }
+
     a {
         font-style: normal;
         font-weight: 400;
@@ -249,8 +259,29 @@ main {
     }
 
     .num {
-        display: inline;
+        display: contents;
+        color: #FFFFFF;
     }
+
+    .logo {
+        margin-top: 60px;
+    }
+
+
+    .lg-screen-content {
+        display: flex;
+        justify-content: center;
+        width: 830px;
+        height: 96px;
+        gap: 40px;
+
+        background-color: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40.7742px);
+        margin-top: 60px;
+
+    }
+
+
 
 
 
@@ -294,9 +325,5 @@ main {
 
     }
 
-    .num {
-        display: inline;
-        padding-right: 120px;
-        margin: ;
-    }
+
 }

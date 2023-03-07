@@ -1,6 +1,6 @@
 const menubar = document.querySelector(".menu-ico")
-const menucontent = document.querySelector(".sm-screen")
-const close = document.getElementById("close")
+const menucontent = document.querySelector(".menu-content")
+const close = document.querySelector(".close")
 
 
 

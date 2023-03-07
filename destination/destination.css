@@ -54,6 +54,44 @@ a {
 
 }
 
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: rgb(8, 8, 8);
+    height: 100vh;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    width: 0;
+    transition: all 2s ease-in;
+}
+
+.show {
+    width: 40vw;
+    padding: 1rem 2px;
+}
+
+.close {
+    margin-top: -10%;
+    font-size: 50px;
+}
+
+.sm-nav>a {
+    display: block;
+    padding-top: 50px;
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(228, 219, 219);
+    text-decoration: none;
+    padding-left: 20px;
+    font-display: var(--bellefair--fnt)
+}
+
+.num {
+    display: none;
+}
+
 .active {
     border-bottom: #FFFFFF solid;
     margin-bottom: -37px;
@@ -267,6 +305,10 @@ h5 {
 
     }
 
+    .menu-content {
+        display: none;
+    }
+
     .nav {
         display: flex;
         justify-content: center;
@@ -435,6 +477,10 @@ h5 {
 
     .num {
         display: inline;
+    }
+
+    .menu-content {
+        display: none;
     }
 
     .logo {

@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
 }
+
 @import url(https://fonts.googleapis.com/css2?family=Bellefair&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Barlow&display=swap);
@@ -77,6 +78,44 @@ a {
 }
 
 .nav {
+    display: none;
+}
+
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: rgb(8, 8, 8);
+    height: 100vh;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    width: 0;
+    transition: all 2s ease-in;
+}
+
+.show {
+    width: 40vw;
+    padding: 1rem 2px;
+}
+
+.close {
+    margin-top: -10%;
+    font-size: 50px;
+}
+
+.sm-nav>a {
+    display: block;
+    padding-top: 50px;
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(228, 219, 219);
+    text-decoration: none;
+    padding-left: 20px;
+    font-display: var(--bellefair--fnt)
+}
+
+.num {
     display: none;
 }
 
@@ -194,11 +233,12 @@ h4 {
 #goto {
     background: #D0D6F9;
 }
-.footer1{
+
+.footer1 {
     margin-left: -6%;
 }
 
-.footer4{
+.footer4 {
     margin-left: 10%;
 }
 
@@ -234,6 +274,10 @@ h4 {
     }
 
     .num {
+        display: none;
+    }
+
+    .menu-content {
         display: none;
     }
 
@@ -324,7 +368,7 @@ h4 {
         height: 532px;
         width: 539.508056640625px;
     }
-       
+
 
 }
 
@@ -470,13 +514,16 @@ h4 {
     .footer3 {
         margin-left: -230px
     }
-    .footer4{
+
+    .footer4 {
         margin-left: -40px;
     }
-    .footer5{
-        padding-left:0px;
+
+    .footer5 {
+        padding-left: 0px;
     }
-    .footer6{
+
+    .footer6 {
         margin-left: 25px;
     }
 
