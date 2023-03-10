@@ -52,6 +52,7 @@ a {
     text-transform: uppercase;
     display: flex;
     align-items: center;
+    margin-top: -40px;
 
 }
 
@@ -102,14 +103,16 @@ a {
 }
 
 .close {
-    margin-top: -10%;
+    margin-top: 10%;
+    margin-left: 30px;
     font-size: 50px;
+    width: 35px;
 }
 
 .sm-nav>a {
     display: block;
     padding-top: 120px;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 900;
     color: rgb(228, 219, 219);
     text-decoration: none;

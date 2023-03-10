@@ -61,6 +61,7 @@ a {
     text-decoration: none;
     font-display: var(--bellefair--fnt);
     text-align: center;
+    margin-top: -50px;
 }
 
 .num {
@@ -96,6 +97,7 @@ a {
 .close {
     margin-top: 10%;
     font-size: 50px;
+    margin-left: 40px;
 }
 
 .logo {
